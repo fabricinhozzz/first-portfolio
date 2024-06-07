@@ -124,7 +124,8 @@
         left: 0;
         width: 100%;
         z-index: 10;
-        background-color: rgb(154, 254, 242);
+        color: white;
+        background-color: #dc143c;
   }
 
   .navbar_content {
@@ -156,7 +157,7 @@
   }
 
   .navbar_links a:hover {
-        color: #dc143c;
+        color: #06688F;
   }
 
 /*main*/
@@ -182,85 +183,70 @@
         scroll-margin-top: 20rem;
     }
 
-  /*projects*/ 
-    .snake_game {
-      background-size: cover;
-    }
-
-    .calculadora_imc {
-        background-size: cover;
-    }
-
-    .relogio_digital {
-        background-size: cover;
-    }
-    
-    .project h2, .project a {
-        text-align: center;
-    }
-    
-    .project h2 {
-        padding-bottom: 70px;
-    }
-    
-    .github-link {
-        margin: 0 auto;
-        padding-top: 35px;
-        padding-bottom: 93px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-        font-size: 2rem;
-    }
-
-    .github-link a:hover{
-        color: #dc143c;
-    }
-    
-    .project a {
-        display: inline;
-    }
-    
-    .pro {
-        background-color: #C4C4C4;
-        height: 195px;
-        width: 310px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        overflow: hidden;
-        transition: ease-in-out 0.3s;
-    }
-    
-    .pro div p {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 20px;
-        color: white;
-    }
-    
-    .pro:hover {
-        letter-spacing: 5px;
-    }
-    
-    .pro div {
-        background-color: #dc143c;
-        width: 1000px;
-        text-align: center;
-        padding: 5% 0;
-        transform: rotate(-50deg);
-    }
-    
-    .project-itens {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 29.5px;
-        width: 100%;
-        justify-content: center;
-    }
+    /*projects*/
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+  }
+  
+  h1 {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 32px;
+  }
+  
+  .project-item {
+      background-color: #161b22;
+      border-radius: 6px;
+      padding: 16px;
+      width: 300px;
+      margin: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s;
+  }
+  
+  .project-item:hover {
+      transform: scale(1.05);
+  }
+  
+  .project-item h3 {
+      font-size: 20px;
+      color: #58a6ff;
+      margin-bottom: 8px;
+  }
+  
+  .project-item p {
+      color: #8b949e;
+      font-size: 14px;
+      margin-bottom: 8px;
+  }
+  
+  .project-item .tags {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+  }
+  
+  .project-item .tag {
+      background-color: #21262d;
+      color: #8b949e;
+      border-radius: 2px;
+      padding: 2px 6px;
+      font-size: 12px;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      gap: 20px;
+      max-width: 960px;
+      margin: auto;
+  }
 
 /*footer*/
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
